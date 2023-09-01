@@ -1,0 +1,116 @@
+.container {
+    min-height: 200px;
+    height : 50%;
+    width : 70%;
+    background-color: white;
+    margin : 2% 10% 5% 10%;
+    padding : 3% 5% 3% 5%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1.0);
+}
+
+@media screen and (max-width:768px) {
+    .container{
+    width: 70%;
+    }
+
+    * {
+        font-size: 16x;
+    }
+
+
+}
+
+.container-2 {
+    min-height: 200px;
+    min-height: 50%;
+    height : auto;
+    width : 50%;
+    background-color: white;
+    margin : 2% 30% 5% 30%;
+    padding : 3% 5% 3% 5%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1.0);
+}
+
+.tables {
+    margin-left : 10%;
+    margin-right : 10%;
+}
+
+.scrollable-column {
+    overflow-x: auto;
+}
+
+.fixed-column {
+    width: 100%;
+}
+
+.fixed-column > table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+td > input[type="text"] {
+  font-size: 15px;
+    height: 20px;
+    width : 90%;
+    margin: 0;
+    border: none;
+    color : black;
+    outline: none;
+    text-align: center;
+    background-color: azure;
+}
+
+td > input[type="text"]:hover {
+    cursor:text;
+    background-color: grey;
+    color: white;
+}
+
+td {
+    height : 22px;
+}
+
+th {
+    padding: 6px 15px 6px 15px;
+}
+
+.add-data {
+    margin: 2%;
+    border-radius: 10px;
+    padding: 2%;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+
+.add-data:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: #356CB1;
+    color: aliceblue;
+}
+
+.add-data > div {
+    display: inline;
+}
+
+.icon {
+    position: relative;
+    top: .150em;
+
+    /* Prevent the icon from shrinking inside a flex container. */
+    flex-shrink: 0;
+
+    /* Scale the icon to match the font-size of the parent element. */
+    height: 1em;
+    width: 1em;
+}

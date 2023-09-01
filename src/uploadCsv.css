@@ -1,0 +1,257 @@
+.upload {
+    display: inline-block;
+    width : 500px;
+    padding : 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    vertical-align: middle;
+}
+@media  screen and (max-width:768px) and (min-width:425px) {
+  .upload {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+@media  screen and (max-width:425px) {
+  .upload {
+    font-size:10px;
+    width: 50%;
+    margin: auto;
+  }
+
+  .intel-type-button > button{
+    font-size: 10px;
+  }
+
+  .intel-type-selection>div {
+    margin : 1% 5% 1% 5%;
+  }
+}
+
+.upload > button {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.upload > button:hover, input:hover {
+    cursor: pointer;
+}
+
+.upload > span {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color : black;
+}
+
+.instruction {
+    margin: 20px;
+}
+
+.intel-type-selection {
+  margin: auto;
+  /* margin: 5% 28% 5% 28%; */
+  display: flex;
+  flex-direction: row;
+}
+
+.intel-type-button {
+  margin : 10px 25px 10px 25px;
+}
+
+.active-button {
+  background-color: #356CB1;
+  color : white;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding:5px;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 10px;
+}
+
+.inactive-button {
+  background-color: white;
+  color : black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding:5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.active-button:hover, .inactive-button:hover{
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 150px;
+  color: transparent;
+}
+
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: #0964b0;
+  content: "Upload CSV File";
+}
+
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+.submission-button{
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #356CB1;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   .submission-button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .submission-button:hover:not(:disabled) {
+    background: #356CB1;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   .submission-button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   .buttons {
+    margin-top:20px;
+    margin-bottom: 5px;
+   }
+
+   
+.loader {
+  width: 48px;
+  height: 48px;
+  margin-top:20%;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #356CB1 #356CB1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-2 {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
