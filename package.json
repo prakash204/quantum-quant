@@ -1,7 +1,7 @@
 {
   "name": "quant",
   "version": "0.1.0",
-  "homepage": "https://prakash204.github.io/quant/",
+  "homepage": "https://prakash204.github.io/quantum-quant/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
