@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/quant/static/css/main.e3dc6610.css",
-    "main.js": "/quant/static/js/main.57e2af34.js",
-    "static/js/787.89595613.chunk.js": "/quant/static/js/787.89595613.chunk.js",
-    "static/media/Cloudy.svg": "/quant/static/media/Cloudy.109f2eeaa1e3db9b6b78.svg",
-    "index.html": "/quant/index.html",
-    "main.e3dc6610.css.map": "/quant/static/css/main.e3dc6610.css.map",
-    "main.57e2af34.js.map": "/quant/static/js/main.57e2af34.js.map",
-    "787.89595613.chunk.js.map": "/quant/static/js/787.89595613.chunk.js.map"
+    "main.css": "/quantum-quant/static/css/main.fc1db0fe.css",
+    "main.js": "/quantum-quant/static/js/main.c401b5cf.js",
+    "static/js/787.89595613.chunk.js": "/quantum-quant/static/js/787.89595613.chunk.js",
+    "static/media/Cloudy.svg": "/quantum-quant/static/media/Cloudy.109f2eeaa1e3db9b6b78.svg",
+    "index.html": "/quantum-quant/index.html",
+    "main.fc1db0fe.css.map": "/quantum-quant/static/css/main.fc1db0fe.css.map",
+    "main.c401b5cf.js.map": "/quantum-quant/static/js/main.c401b5cf.js.map",
+    "787.89595613.chunk.js.map": "/quantum-quant/static/js/787.89595613.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3dc6610.css",
-    "static/js/main.57e2af34.js"
+    "static/css/main.fc1db0fe.css",
+    "static/js/main.c401b5cf.js"
   ]
 }
